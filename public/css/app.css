@@ -1,7 +1,10 @@
 :root {
     --color-primary: #9E87CE;
+    --color-primary-rgb: 158, 135, 206;
     --color-light: #F2F2F2;
+    --color-light-rgb: 242, 242, 242;
     --color-dark: #333333;
+    --color-dark-rgb: 51, 51, 51;
 }
 
 @font-face {
@@ -10,23 +13,23 @@
 }
 
 .bg-primary {
-    background: var(--color-primary) !important;
+    background-color: var(--color-primary) !important;
 }
 
 .bg-light {
-    background: var(--color-light) !important;
+    background-color: var(--color-light) !important;
 }
 
 .bg-dark {
-    background: var(--color-dark) !important;
+    background-color: var(--color-dark) !important;
 }
 
 .bg-white {
-    background: white !important;
+    background-color: white !important;
 }
 
 .bg-transparent {
-    background: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
 }
 
 .primary {
@@ -93,4 +96,51 @@
 
 body {
     font-size: 1.3rem;
+}
+
+.container {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email],
+ [type=month], [type=number], [type=password], [type=search], [type=tel],
+ [type=text], [type=time], [type=url], [type=week], textarea {
+    height: 2.6rem;
+}
+
+label {
+    font-size: 1.1rem;
+    line-height: 2.6rem;
 }
