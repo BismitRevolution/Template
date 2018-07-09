@@ -26,7 +26,7 @@ $(document).ready(function () {
     // }
 
     // Parallax Effect
-    // var parallaxBg = document.getElementById("parallax-top");
+    // var parallaxBg = document.getElementById("parallax");
     // var base = 0;
     //
     // window.onscroll = function () {
