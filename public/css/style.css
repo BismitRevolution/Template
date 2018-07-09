@@ -1,3 +1,81 @@
+.overlay-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.parallax-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay-content, .parallax-content {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    font-family: "Aller Bold";
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-family: "Aller Regular";
+    font-size: 1.6rem;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333;
+}
+
+.panel .panel-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* .panel .panel-image:hover {
+    background-size: auto 120%;
+} */
+
+.panel .panel-content {
+    padding: 10px;
+}
+
+.panel .panel-content h1, .panel .panel-content h2, .panel .panel-content h3,
+.panel .panel-content h4, .panel .panel-content h5 {
+    margin: 0px;
+}
+
+.panel .panel-content .panel-subtitle {
+    margin-bottom: 8px;
+}
+
+.panel .panel-content .panel-paragraph p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-width: 20ch; */
+    /* line-height: 1.8rem;
+    max-height: 3.6rem; */
+}
+
+.form-control, .form-round {
+    font-family: "Droid Regular";
+}
+
 .form-round input, .form-round button {
     border-radius: 10px;
 }
