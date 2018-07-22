@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
 use App\Post;
+
 
 class PostController extends Controller
 {
@@ -37,17 +41,52 @@ class PostController extends Controller
     {
         $this->validate($request, array(
             'title' => 'required|max:255',
-            'body'  => 'required'
+            'body'  => 'required',
+            'photos' => '',
+            'tags' => ''
         ));
 
-        $post = new Post;
+        $id = DB::table('posts')->insertGetId([
+            'title'         => $request->title,
+            'body'          => $request->body,
+            'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at'    => Carbon::now()->format('Y-m-d H:i:s')
+        ]);
 
-        $post->title = $request->title;
-        $post->body = $request->body;
+        $tags = $request->tags;
+        $tags = strtolower($tags);
+        $tags = preg_split("/[\s,]+/", $tags);
 
-        $post->save();
+        // foreach ($variable as $key => $value) {
+        //   // code...
+        // }
+        // foreach ($tags as $tag) {
+        //   // code...
+        // }
 
-        return redirect()->route('posts.show', $post->id);
+        $files = $request->file('photos');
+
+        if ($request->hasFile('photos')) {
+            foreach ($files as $file) {
+                $path = $file->store(
+                    '/public/'.$id
+                );
+                //deploy
+                // Storage::disk('local')->put('/public/'.$id, $file);
+
+                // development
+                $path = 'storage/'.substr($path, 7);
+
+                $photo_id = DB::table('photos')->insertGetId([
+                    'photo_path'    => $path,
+                    'post_id'      => $id,
+                    'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
+                    'updated_at'    => Carbon::now()->format('Y-m-d H:i:s')
+                ]);
+            }
+        }
+
+        return redirect()->route('posts.show', $id);
     }
 
     /**
@@ -58,9 +97,11 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        $post = Post::find($id);
+        $post = DB::table('posts')->where('posts.post_id', '=', $id)->first();
+        $photos = DB::table('photos')->where('photos.post_id', '=', $id)->get();
 
-        return view('posts.show')->with('post', $post);
+        return view('posts.show')->with(['post' => $post,
+                                        'photos' => $photos]);
     }
 
     /**
@@ -96,4 +137,5 @@ class PostController extends Controller
     {
         //
     }
+
 }
