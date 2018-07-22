@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
 use App\Post;
+use App\Tag;
 
 
 class PostController extends Controller
@@ -57,12 +58,27 @@ class PostController extends Controller
         $tags = strtolower($tags);
         $tags = preg_split("/[\s,]+/", $tags);
 
-        // foreach ($variable as $key => $value) {
-        //   // code...
-        // }
-        // foreach ($tags as $tag) {
-        //   // code...
-        // }
+        $new_post = Post::find($id);
+
+        foreach ($tags as $tag) {
+
+          $ex_tag = DB::table('tags')
+                    ->where('tag_name', $tag)
+                    ->first();
+
+          if (!$ex_tag) {
+
+            $tag_id = DB::table('tags')
+                        ->insertGetId(['tag_name' => $tag]);
+            DB::table('posts_tags')->insertGetId(['post_id' => $id, 'tag_id' => $tag_id]);
+
+          } else {
+
+            DB::table('posts_tags')->insertGetId(['post_id' => $id, 'tag_id' => $ex_tag["tag_id"]]);
+
+          }
+
+        }
 
         $files = $request->file('photos');
 
@@ -99,9 +115,12 @@ class PostController extends Controller
     {
         $post = DB::table('posts')->where('posts.post_id', '=', $id)->first();
         $photos = DB::table('photos')->where('photos.post_id', '=', $id)->get();
+        $tags = DB::table('posts_tags')->join('tags', 'tags.tag_id', '=', 'posts_tags.tag_id')
+                ->where('posts_tags.post_id', '=', $id)->get();
 
         return view('posts.show')->with(['post' => $post,
-                                        'photos' => $photos]);
+                                        'photos' => $photos,
+                                        'tags' => $tags]);
     }
 
     /**

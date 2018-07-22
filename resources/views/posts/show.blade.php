@@ -7,5 +7,9 @@ HELLO
 		@foreach($photos as $photo)
 				<img src="/{{ $photo->photo_path }}" alt="">
 		@endforeach
+
+		@foreach($tags as $tag)
+			{{ $tag->tag_name }}
+		@endforeach
 	</div>
 @endsection
