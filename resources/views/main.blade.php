@@ -21,6 +21,8 @@
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/lightbox.css') }}"> -->
         <!-- Font Awesome -->
         <link rel="stylesheet" href="{{ asset('css/vendor/fontawesome-all.css') }}">
+        <!-- FullPage Scrolling -->
+        <link rel="stylesheet" href="{{ asset('css/vendor/fullpage.min.css') }}">
         <!-- Basic Style -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Navbar Style -->
@@ -71,6 +73,12 @@
         <!-- GreenSock -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/utils/Draggable.min.js"></script>
+
+        <!-- FullPage Scrolling -->
+        <!-- <script type="application/javascript" src="{{ asset('js/vendor/easings.min.js') }}"></script> -->
+        <!-- <script type="application/javascript" src="{{ asset('js/vendor/scrolloverflow.min.js') }}"></script> -->
+        <!-- <script type="application/javascript" src="{{ asset('js/vendor/fullpage.min.js') }}"></script> -->
+        <script type="application/javascript" src="{{ asset('js/vendor/fullpage.extensions.min.js') }}"></script>
 
         <!-- Customization -->
         <script type="application/javascript" src="{{ asset('js/app.js') }}"></script>
