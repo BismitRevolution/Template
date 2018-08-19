@@ -1,10 +1,14 @@
 :root {
-    --color-primary: #9E87CE;
-    --color-primary-rgb: 158, 135, 206;
-    --color-light: #F2F2F2;
-    --color-light-rgb: 242, 242, 242;
-    --color-dark: #333333;
-    --color-dark-rgb: 51, 51, 51;
+    --color-blue: #00BBE3;
+    --color-blue-rgb: 0, 187, 227;
+    --color-dark-blue: #0097D6;
+    --color-dark-blue-rgb: 0, 151, 214;
+    --color-light-blue: #8FCFEC;
+    --color-light-blue-rgb: 143, 207, 236;
+    --color-light: #FAFBFE;
+    --color-light-rgb: 250, 251, 254;
+    --color-dark: #222428;
+    --color-dark-rgb: 34, 36, 40;
 }
 
 @font-face {
@@ -54,8 +58,16 @@
     font-family: "Aller-Regular";
 }
 
-.bg-primary {
-    background-color: var(--color-primary) !important;
+.bg-blue {
+    background-color: var(--color-blue) !important;
+}
+
+.bg-dark-blue {
+    background-color: var(--color-dark-blue) !important;
+}
+
+.bg-light-blue {
+    background-color: var(--color-light-blue) !important;
 }
 
 .bg-light {
@@ -74,8 +86,16 @@
     background-color: rgba(255, 255, 255, 0) !important;
 }
 
-.primary {
-    color: var(--color-primary) !important;
+.blue {
+    color: var(--color-blue) !important;
+}
+
+.dark-blue {
+    color: var(--color-dark-blue) !important;
+}
+
+.light-blue {
+    color: var(--color-light-blue) !important;
 }
 
 .light {
@@ -136,9 +156,12 @@
     font-style: italic;
 }
 
-.container {
-    margin-left: 20vw;
-    margin-right: 20vw;
+.full-height {
+    height: 100vh;
+}
+
+.full-width {
+    width: 100vw;
 }
 
 body {
@@ -155,6 +178,56 @@ body {
 label {
     font-size: 1.1rem;
     line-height: 2.6rem;
+}
+
+.container {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.container-narrow {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.special {
+    position: absolute;
+}
+
+.super {
+    position: fixed;
+}
+
+.super-left {
+    left: 20vw;
+}
+
+.super-left-narrow {
+    left: 5vw;
+}
+
+.super-right {
+    right: 20vw;
+}
+
+.super-right-narrow {
+    right: 5vw;
+}
+
+.super-top {
+    top: 20vw;
+}
+
+.super-top-narrow {
+    top: 5vw;
+}
+
+.super-bottom {
+    bottom: 20vw;
+}
+
+.super-bottom-narrow {
+    bottom: 5vw;
 }
 
 /* Mobile screen */
