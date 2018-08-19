@@ -21,6 +21,8 @@
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/lightbox.css') }}"> -->
         <!-- Font Awesome -->
         <link rel="stylesheet" href="{{ asset('css/vendor/fontawesome-all.css') }}">
+        <!-- Hamburger -->
+        <!-- <link rel="stylesheet" href="{{ asset('css/vendor/hamburgers.min.css') }}"> -->
         <!-- FullPage Scrolling -->
         <link rel="stylesheet" href="{{ asset('css/vendor/fullpage.min.css') }}">
         <!-- Animate CSS -->
