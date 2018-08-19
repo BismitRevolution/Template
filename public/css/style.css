@@ -118,3 +118,11 @@
 .dropdown-pane ul li:hover {
     background-color: rgba(var(--color-dark-rgb), 0.1);
 }
+
+.section {
+    height: 100vh;
+}
+
+.fp-controlArrow {
+    opacity: 0;
+}
