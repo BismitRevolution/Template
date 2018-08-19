@@ -22,7 +22,9 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="{{ asset('css/vendor/fontawesome-all.css') }}">
         <!-- FullPage Scrolling -->
-        <!-- <link rel="stylesheet" href="{{ asset('css/vendor/fullpage.min.css') }}"> -->
+        <link rel="stylesheet" href="{{ asset('css/vendor/fullpage.min.css') }}">
+        <!-- Animate CSS -->
+        <!-- <link rel="stylesheet" href="{{ asset('css/vendor/animate.min.css') }}"> -->
         <!-- Basic Style -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Navbar Style -->
@@ -39,6 +41,7 @@
         <title>@yield('title')</title>
     </head>
     <body>
+        <!-- @include('_loading') -->
         @include('layouts._header')
         <div class="">
         @yield('content')
@@ -85,6 +88,7 @@
         <script type="application/javascript" src="{{ asset('js/_header.js') }}"></script>
         <script type="application/javascript" src="{{ asset('js/_footer.js') }}"></script>
         @yield('extra-js')
+        <!-- <script type="application/javascript" src="{{ asset('js/_finish.js') }}"></script> -->
 
         @include('layouts._footer')
     </body>
