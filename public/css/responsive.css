@@ -1,0 +1,39 @@
+/* Mobile screen */
+@media screen and (max-width: 575px) {
+    .container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Small screen */
+@media screen and (min-width: 576px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium screen */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.72rem;
+    }
+}
+
+/* Large screen */
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+/* Fullscreen screen */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 7.5rem;
+    }
+}
