@@ -2,6 +2,14 @@ $(document).ready(function () {
     // Set boundaries automatically
     // $("#topic-chooser").height($(".chooser").width());
 
+    // Fullpage JS
+    // $('#fullpage').fullpage({
+    //     licenceKey: "OPEN-SOURCE-GPLV3-LICENSE",
+    //     autoScrolling: true,
+    //     slidesNavigation: true,
+    //     scrollHorizontally: true,
+    // });
+
     // Create animation
     // var chooser = document.getElementsByClassName("chooser");
     // function setHover(item) {
