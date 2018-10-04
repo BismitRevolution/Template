@@ -17,6 +17,7 @@
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/bootstrap-v4.0.min.css') }}"> -->
         <!-- Materialize -->
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/materialize.min.css') }}"> -->
+        <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
         <!-- Foundation ZURB -->
         <link rel="stylesheet" href="{{ asset('css/vendor/foundation.min.css') }}">
         <!-- Lightbox -->
