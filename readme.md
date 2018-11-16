@@ -1,68 +1,37 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# [Project Name]
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Description
+> **[Project Name]** is a template for developing BismitRevolution projects so we can maximize our development process in order to make more fast and agile.
 
-## About Laravel
+###### Why Project Name?
+> **[Project Name]** provides more fast and agile in our development process to maximize our final project and cut off times.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Environment
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+##### Frameworks
+###### 1. Laravel
+> - version 5.7 stable, [link](https://laravel.com/ "Laravel - The PHP Framework For Web Artisans")
+###### 2. Bootstrap CSS
+> - version 4.1.3, [link](http://getbootstrap.com/ "Bootstrap - The most popular HTML, CSS, and JS library in the world.")
+###### 3. Foundation CSS
+> - version 6.4.2, [link](http://foundation.zurb.com/ "Foundation - The most advanced responsive front-end framework in the world.")
+###### 4. Materialize CSS
+> - version 1.0.0, [link](http://foundation.zurb.com/ "Materialize - A modern responsive front-end framework based on Material Design.")
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+##### Libraries
+###### 1. Font Awesome
+> - version 5.0.8, [link](https://fontawesome.com/ "Icons - Font Awesome")
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Contributors
+###### Project Lead
+> - Aji Imawan Omi, see [full profile](https://www.linkedin.com/in/ajiimawanomi/ "see Aji on LinkedIn")
+###### Back End Developer
+> - Muhammad Fachry Nataprawira, see [full profile](https://www.linkedin.com/in/keinata/ "see Fachry on LinkedIn")
+> - Rayza Arasj Mahardhika, see [full profile](https://www.linkedin.com/in/rayzaarasj/ "see Rayza on LinkedIn")
+> - Valian Fil Ahli, see [full profile](https://www.linkedin.com/in/valianfilahli/ "see Valian on LinkedIn")
+###### Front End Developer
+> - Muhammad Risyad Ilmawan, see [full profile](https://www.linkedin.com/in/risyadilmawan/ "see Risyad on LinkedIn")
+> - Razaqa Dhafin Haffiyan, see [full profile](https://www.linkedin.com/in/razaqa-dhafin-haffiyan/ "see Dhafin on LinkedIn")
+###### UI Designer
+> - Najwa Satirah, see [full profile](https://www.linkedin.com/in/najwa-satirah/ "see Najwa on LinkedIn")
+> - Nabila Fathia Zahra, see [full profile](https://www.linkedin.com/in/nabila-fathia-zahra-b3623114b/ "see Nabila on LinkedIn")
