@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="{{ asset('css/vendor/flat-ui.min.css') }}">
         <!-- Fontawesome CSS -->
         <link rel="stylesheet" href="{{ asset('css/vendor/all.min.css') }}">
+        <!-- App CSS -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <title>@yield('title')</title>
     </head>
     <body>
