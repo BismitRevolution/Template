@@ -40,7 +40,7 @@
 								<button type="submit" class="btn btn-primary">Edit</button>
 							</form>
 							<form action="{{ route('admin.articles.destroy', ['id' => $article->article_id]) }}" method="POST">
-								<input disabled type="hidden" name="_method" value="DELETE" />
+								<input hidden type="hidden" name="_method" value="DELETE" />
 								<button type="submit" class="btn btn-danger">Delete</button>
 								{!! csrf_field() !!}
 							</form>
